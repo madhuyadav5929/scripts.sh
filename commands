@@ -1,0 +1,5 @@
+kubectl apply -f catalogue/manifest.yaml -f mongodb/manifest.yaml -f mysql/manifest.yaml -f payment/manifest.yaml -f rabbitmq/manifest.yaml -f redis/manifest.yaml -f shipping/manifest.yaml -f user/manifest.yaml -f web/manifest.yaml
+
+
+eksctl delete cluster --name=madhu1cluster --region=us-east-1
+aws eks update-kubeconfig --region us-east-1 --name madhu1cluster
